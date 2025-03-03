@@ -16,9 +16,9 @@ build <- \(...) {
  
   # create app instance
   app <- ambiorix::Ambiorix$new()
+  #app$set_error(error_handler)
   # 404 page
   app$not_found <- render_404
-
   # 500 server errors
   app$error <- render_500
 

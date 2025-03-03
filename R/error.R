@@ -21,3 +21,12 @@ render_500 <- \(req, res, error){
     "Internal server error"
   )
 }
+
+#' @rdname error_handler
+#' @keywords internal
+error_handler <- \(req, res, error) {
+  if (!is.null(error)) {
+    msg <- conditionMessage(error)
+    message(msg)
+  }
+}
