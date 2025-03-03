@@ -8,4 +8,4 @@ AMBIORIX_PORT <- Sys.getenv(
 # load package functions
 pkgload::load_all()
 # run the app
-build( app = 'todolist')$start(port = AMBIORIX_PORT)
+build( app)$start(port = AMBIORIX_PORT)
