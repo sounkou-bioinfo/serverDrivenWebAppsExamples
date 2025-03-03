@@ -9,7 +9,9 @@
 #' @export 
 build <- \(...) {
 
-  
+  # future mirai 
+  library(future.mirai)
+  plan(mirai_multisession)
   # create app instance
  
   app <- ambiorix::Ambiorix$new()
@@ -40,6 +42,15 @@ build <- \(...) {
   app$get("/contact", contact_get)
 
   app$post("/contact", contact_post)
+
+  # test async
+
+  app$get("/async", \(req, res){
+  future({
+    Sys.sleep(1)
+    res$sendf(Sys.time() |> as.character())
+  })
+})
 
 
   return(app)
