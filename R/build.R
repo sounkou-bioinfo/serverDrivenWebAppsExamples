@@ -12,7 +12,7 @@ build <- \(...) {
   
   # create app instance
  
-  app <- Ambiorix$new()
+  app <- ambiorix::Ambiorix$new()
 
   # 404 page
   app$not_found <- render_404
