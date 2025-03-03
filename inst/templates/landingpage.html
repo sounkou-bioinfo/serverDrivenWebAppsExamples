@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  [! partials/header.html !]
+  <title>Ambiorix</title>
+</head>
+<body>
+  <button hx-get="/ambiorix" hx-target="#page">Ambiorix</button>
+  <button hx-get="/about" hx-target="#page">About</button>
+  <button hx-get="/contact" hx-target="#page">Contact</button>
+  <h1 class="brand">[% title %]</h1>
+  <h2 class="brand">[% subtitle %]</h2>
+  <div id="page">
+ </div>
+</body>
+</html>
