@@ -6,7 +6,7 @@
 #' 
 #' @return An object of class `Ambiorix`.
 #' 
-#' @export 
+#' @export
 build <- \(...) {
 
   # future mirai 

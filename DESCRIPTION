@@ -1,22 +1,22 @@
 Package: serverDrivenWebAppsExamples
 Title: 'ambiorix' Example Applications Illustrating The Use of Server-Driven Web Applications
+Version: 0.0.1.9000
 Authors@R: 
-    person("Sounkou Mahamane", "Toure", , "first.last@example.com", role = c("aut", "cre"),
+    person("Sounkou Mahamane", "Toure", , "soukoutoure@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: 'ambiorix' applications illustrating the use of server-driven web applications. The examples are derived from the book Server-Driven Web Apps with htmx by R R. Mark Volkmann.
-License: `use_mit_license()` 
+Author: Sounkou Mahamane Toure [aut, cre] (YOUR-ORCID-ID)
+Maintainer: Sounkou Mahamane Toure <sounkoutoure@gmail.com>
+License: MIT
 LazyData: false
-Version: 0.0.1.9000
 Depends: R (>= 4.1.0)
 Imports:
   ambiorix,
   htmltools,
-  duckdb,
-  duckplyr,
-  vroom,
-  ggplot2,
-  dotenv,
-  shinychat
+  webutils,
+  uuid,
+  glue,
+  dotenv
 Suggests:
   pkgload,
   devtools,

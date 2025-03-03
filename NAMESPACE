@@ -2,3 +2,4 @@
 
 export(build)
 import(ambiorix)
+importFrom("utils", "packageVersion")

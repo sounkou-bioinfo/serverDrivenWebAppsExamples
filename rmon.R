@@ -1,4 +1,1 @@
-rmon::monitor(
-    dir = ".",
-    file = "app.R"
-)
+rmon::monitor( dir = ".", file = "app.R")
