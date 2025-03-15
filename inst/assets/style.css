@@ -11,6 +11,7 @@
 body {
 font-family: sans-serif;
 }
+
 button {
 border-radius: 0.5rem;
 margin-bottom: 1rem;
@@ -21,7 +22,6 @@ padding: 0.5rem;
 /*--------------------------------------------------------------
 # htmx swaps & indicators
 ref : https://github.com/ambiorix-web/ambiorix-htmx/blob/main/infinite-scroll/public/styles.css
---------------------------------------------------------------*/
 *[hx-swap] {
   animation: animate-in 500ms ease-in-out;
 }
@@ -46,3 +46,5 @@ ref : https://github.com/ambiorix-web/ambiorix-htmx/blob/main/infinite-scroll/pu
 .htmx-request .htmx-indicator, .htmx-request.htmx-indicator {
   opacity: 1;
 }
+
+--------------------------------------------------------------*/
